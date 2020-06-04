@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Advance Salary Calculator</string>
+    <string name="title">SALARY CALCULATOR</string>
+    <string name="todo">imageOfSalary</string>
+
+
+    <string name="name">Name</string>
+    <string name="salary">CTC</string>
+    <string name="tax">Tax</string>
+    <string name="epf">EPF</string>
+    <string name="netsalary">Net Salary</string>
+    <string name="secondtitle">ADD DETAILS</string>
+    <string name="btnadd">SUBMIT</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+
+    <string name="enter_ctc">Enter CTC</string>
+    <string name="total_salary">Total Salary</string>
+    <string name="total_deduction">Total Deduction</string>
+
+    <string name="tax1">TAX</string>
+    <string name="_12">12</string>
+    <string name="_05">05</string>
+    <string name="sda">SDA</string>
+    <string name="canteen_a">Canteen A.</string>
+    <string name="_20">20</string>
+    <string name="special_a">Special A.</string>
+    <string name="_10">10</string>
+    <string name="hra">HRA</string>
+    <string name="_30">30</string>
+    <string name="basic_pay">Basic Pay</string>
+    <string name="amount">AMOUNT</string>
+    <string name="percentage">PERCENTAGE</string>
+    <string name="component">COMPONENT</string>
+    <string name="net_salary">Net Salary</string>
+    <string name="add_details">ADD DETAILS</string>
+    <string name="settings">Settings</string>
+    <string name="setZeroValue">00</string>
+
+
+</resources>
