@@ -1,38 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_margin="10dp"
+    android:orientation="vertical">
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-
-        <TextView
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:layout_margin="10dp"
-            android:gravity="center"
+           android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:text="@string/add_details"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
-    </LinearLayout>
-
-
     <TableLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:background="#ffffff"
         android:shrinkColumns="*"
         android:stretchColumns="*">
@@ -45,20 +31,16 @@
 
 
             <TextView
-                android:id="@+id/TextView1"
-                android:layout_weight="1"
                 android:background="#778899"
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/component"
+                android:gravity="center"
                 android:textColor="#ffffff" />
 
             <TextView
-                android:id="@+id/TextView2"
-                android:layout_weight="1"
                 android:background="#778899"
-                android:gravity="center"
                 android:padding="20dip"
+                android:gravity="center"
                 android:text="@string/percentage"
                 android:textColor="#ffffff" />
         </TableRow>
@@ -69,21 +51,17 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:layout_weight="1"
-
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/basic_pay"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
 
             <EditText
                 android:id="@+id/basicPayPer"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:inputType="numberDecimal"
+                android:gravity="center"
                 android:padding="20dip"
                 android:text="" />
 
@@ -96,19 +74,16 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:layout_weight="1"
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/hra"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/hraPer"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:inputType="numberDecimal"
+                android:gravity="center"
                 android:padding="20dip"
                 android:text="" />
         </TableRow>
@@ -119,19 +94,16 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:layout_weight="1"
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/special_a"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/saPer"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:inputType="numberDecimal"
+                android:gravity="center"
                 android:padding="20dip"
                 android:text="" />
         </TableRow>
@@ -142,19 +114,16 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:layout_weight="1"
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/canteen_a"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/caPer"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:inputType="numberDecimal"
+                android:gravity="center"
                 android:padding="20dip"
                 android:text="" />
         </TableRow>
@@ -165,18 +134,16 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/sda"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/sdaPer"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:inputType="numberDecimal"
+                android:gravity="center"
                 android:padding="20dip"
                 android:text="" />
         </TableRow>
@@ -186,16 +153,14 @@
             android:layout_height="wrap_content">
 
             <TextView
-
-                android:gravity="center"
                 android:padding="20dip"
                 android:text="@string/epf"
+                android:gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/epfPerinDetails"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:inputType="numberDecimal"
                 android:padding="20dip"
@@ -204,13 +169,12 @@
 
 
     </TableLayout>
-
-
     <Button
         android:id="@+id/btnaddDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:background="#778899"
         android:text="@string/btnadd"
         android:textColor="#ffffff" />
