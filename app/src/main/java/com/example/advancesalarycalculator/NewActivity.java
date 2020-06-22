@@ -25,44 +25,27 @@ public class NewActivity extends AppCompatActivity {
     TextView taxAmt1, total, ded, net;
 
     double ctcSalary;
-    double bpPer = 30;
-    double hraP = 10;
-    double saP = 20;
-    double cap = 5;
-    double sdaP = 5;
-    double epfp = 12;
-    double taxp;
-    double epfa;
-    double taxa;
-
-    double neta;
-    double bpAmt, hraA, saa, caa, sdaa;
+    double bpPer = 30, hraP = 10, saP = 20,cap = 5, sdaP = 5, epfp = 12;
+    double taxp, epfa, taxa, neta, bpAmt, hraA, saa, caa, sdaa;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
-
         ctc1 = findViewById(R.id.ctc);
         basicPayPer1 = findViewById(R.id.basicPayPer);
         basicPayAmt1 = findViewById(R.id.basicPayAmt);
-
         hraPer1 = findViewById(R.id.hraPer);
         hraAmt1 = findViewById(R.id.hraAmt);
-
         saPer1 = findViewById(R.id.saPer);
         saAmt1 = findViewById(R.id.saAmt);
-
         caPer1 = findViewById(R.id.caPer);
         caAmt1 = findViewById(R.id.caAmt);
-
         sdaPer1 = findViewById(R.id.sdaPer);
         sdaAmt1 = findViewById(R.id.sdaAmt);
-
         epfPer1 = findViewById(R.id.epfPer);
         epfAmt1 = findViewById(R.id.epfAmt);
-
         taxPer1 = findViewById(R.id.taxPer);
         taxAmt1 = findViewById(R.id.taxAmt);
         total = findViewById(R.id.permonth);
@@ -80,7 +63,10 @@ public class NewActivity extends AppCompatActivity {
                             if (ctc1.getText().toString().isEmpty()) {
                                 ctc1.setError("CTC is Required");
 
-                            } else {
+                            } else if (Double.parseDouble(ctc1.getText().toString())>99999999){
+                                ctc1.setError("Please Enter the CTC below 99999999");
+                            }
+                            else {
                                 ctcSalary = Double.parseDouble(ctc1.getText().toString());
                                 setTaxPercentage(ctcSalary);
                                 calculateAmount(ctcSalary);
